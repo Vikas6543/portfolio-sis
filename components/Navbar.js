@@ -26,7 +26,7 @@ export default function Navbar() {
           }
         });
       },
-      { rootMargin: "-40% 0px -55% 0px", threshold: 0 }
+      { rootMargin: "-40% 0px -55% 0px", threshold: 0 },
     );
 
     sections.forEach((section) => observer.observe(section));
@@ -46,7 +46,7 @@ export default function Navbar() {
           onClick={() => handleClick("home")}
           className="font-script text-2xl text-white leading-none relative"
         >
-          abhinav.
+          Divya
           <span className="absolute -bottom-1 left-0 right-2 h-0.5 bg-gradient-to-r from-accent to-fuchsia-500 rounded-full" />
         </button>
 
@@ -80,7 +80,11 @@ export default function Navbar() {
             stroke="currentColor"
             strokeWidth="2"
           >
-            <path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" />
+            <path
+              d="M5 12h14M13 6l6 6-6 6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </a>
 
