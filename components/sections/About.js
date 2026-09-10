@@ -44,8 +44,12 @@ export default function About() {
           </ul>
         </div>
 
-        <div className="justify-self-center">
-          <div className="w-48 h-48 sm:w-56 sm:h-56 rounded-lg bg-gradient-to-br from-accent/40 to-slate-800 border border-accent/40" />
+        <div className="justify-self-center group relative w-48 h-48 sm:w-56 sm:h-56 cursor-pointer">
+          <div className="absolute inset-0 rounded-lg bg-accent/50 blur-xl opacity-0 group-hover:opacity-60 transition-opacity duration-500" />
+          <div className="relative w-full h-full rounded-lg bg-gradient-to-br from-accent/40 to-slate-800 border border-accent/40 overflow-hidden transition-transform duration-500 ease-out group-hover:scale-105 group-hover:-rotate-1 group-hover:border-accent">
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-br from-white/0 via-white/10 to-white/0 -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
+          </div>
         </div>
       </div>
     </section>

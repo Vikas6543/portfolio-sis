@@ -15,7 +15,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata = {
-  title: "Portfolio",
+  title: "Divya - Portfolio",
   description: "My personal portfolio website",
 };
 

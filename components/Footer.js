@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
     <footer className="py-20 px-6 border-t border-slate-900 text-center">
-      <p className="font-script text-3xl text-white">abhinav.</p>
+      <p className="font-script text-3xl text-white">divya</p>
 
       <div className="flex items-center justify-center gap-3 mt-6 text-slate-500 text-sm">
         <span className="h-px w-16 bg-slate-800" />
@@ -38,13 +38,24 @@ export default function Footer() {
 
       <div className="flex items-center justify-center gap-5 mt-8">
         <a
-          href="mailto:pratham.n@drillbitplagiarism.com"
+          href="#"
           aria-label="Email"
           className="text-slate-500 hover:text-white transition-colors"
         >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg
+            width="18"
+            height="18"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+          >
             <rect x="3" y="5" width="18" height="14" rx="2" />
-            <path d="M3 7l9 6 9-6" strokeLinecap="round" strokeLinejoin="round" />
+            <path
+              d="M3 7l9 6 9-6"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </a>
         <a
@@ -72,7 +83,7 @@ export default function Footer() {
       </div>
 
       <p className="text-slate-600 text-sm mt-16">Thanks For Visiting.</p>
-      <p className="font-script text-2xl text-slate-700 mt-2">Pratham N.</p>
+      <p className="font-script text-2xl text-slate-700 mt-2">Divya.</p>
     </footer>
   );
 }

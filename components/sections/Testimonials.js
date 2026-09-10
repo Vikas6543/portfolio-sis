@@ -1,19 +1,19 @@
 const testimonials = [
   {
     quote:
-      "Abhinav is a continuous learner who is eager to push the boundaries and try new things in design.",
+      "Divya is a continuous learner who is eager to push the boundaries and try new things in design.",
     name: "Ruben Joseph",
     role: "Product Designer at Alliants",
   },
   {
     quote:
-      "Abhinav's ability to grasp nuances, combined with his work ethic and quality of the delivered solution blew me away. Incredible individual to work with.",
+      "Divya's ability to grasp nuances, combined with his work ethic and quality of the delivered solution blew me away. Incredible individual to work with.",
     name: "Sourabh Ravindran",
     role: "CEO at Ordinatim",
   },
   {
     quote:
-      "Working with Abhinav was a great experience. He communicates clearly, takes ownership, and consistently ships high quality work on time.",
+      "Working with Divya was a great experience. He communicates clearly, takes ownership, and consistently ships high quality work on time.",
     name: "Priya Menon",
     role: "Engineering Manager at Nimbus",
   },
