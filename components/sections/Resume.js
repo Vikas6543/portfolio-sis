@@ -20,7 +20,7 @@ export default function Resume() {
           Download Resume
         </a>
         <a
-          href="mailto:pratham.n@drillbitplagiarism.com"
+          href="mailto:divyapanchakshire@gmail.com"
           className="border border-slate-700 text-slate-300 px-8 py-3 rounded font-medium hover:bg-slate-800 transition-colors"
         >
           Say Hello

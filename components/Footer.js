@@ -38,7 +38,7 @@ export default function Footer() {
 
       <div className="flex items-center justify-center gap-5 mt-8">
         <a
-          href="#"
+          href="mailto:divyapanchakshire@gmail.com"
           aria-label="Email"
           className="text-slate-500 hover:text-white transition-colors"
         >
@@ -59,18 +59,7 @@ export default function Footer() {
           </svg>
         </a>
         <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Twitter / X"
-          className="text-slate-500 hover:text-white transition-colors"
-        >
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M18.9 2H22l-7.6 8.7L23 22h-6.9l-5.4-6.6L4.4 22H1.3l8.1-9.3L1 2h7l4.9 6L18.9 2Zm-1.2 18h1.9L7.4 3.9H5.4L17.7 20Z" />
-          </svg>
-        </a>
-        <a
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/divya-prakash-99291b286?utm_source=share_via&utm_content=profile&utm_medium=member_android"
           target="_blank"
           rel="noreferrer"
           aria-label="LinkedIn"
