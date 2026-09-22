@@ -1,21 +1,21 @@
 const testimonials = [
   {
     quote:
-      "Divya is a continuous learner who is eager to push the boundaries and try new things in design.",
-    name: "Ruben Joseph",
-    role: "Product Designer at Alliants",
+      "Divya has a great ability to understand complex requirements and turn them into clear, intuitive user experiences. She brings thoughtful design thinking to every project.",
+    name: "Pankaj Kumar",
+    role: "Design Lead at Torry Harris",
   },
   {
     quote:
-      "Divya's ability to grasp nuances, combined with his work ethic and quality of the delivered solution blew me away. Incredible individual to work with.",
-    name: "Sourabh Ravindran",
-    role: "CEO at Ordinatim",
+      "I really enjoy collaborating with Divya. She is always open to feedback, communicates her design decisions clearly, and works closely with the development team.",
+    name: "Chethan Ramakrishna",
+    role: "Technical Lead at Torry Harris",
   },
   {
     quote:
-      "Working with Divya was a great experience. He communicates clearly, takes ownership, and consistently ships high quality work on time.",
-    name: "Priya Menon",
-    role: "Engineering Manager at Nimbus",
+      "Working with Divya has always been smooth. She listens carefully, asks the right questions, and collaborates closely with product and development teams to bring ideas to life.",
+    name: "Nishmitha Dasaraju",
+    role: "Produt Designer at Torry Harris",
   },
 ];
 
@@ -26,8 +26,9 @@ function Card({ t }) {
         &ldquo;{t.quote}&rdquo;
       </p>
       <div className="flex items-center gap-3 mt-6">
-        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent/60 to-fuchsia-500/60 flex items-center justify-center text-sm font-semibold text-white shrink-0">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-br from-accent/60 to-fuchsia-500/60 flex items-center justify-center text-sm font-semibold text-white shrink-0 uppercase">
           {t.name.charAt(0)}
+          {t.name.split(" ")[1]?.charAt(0)}
         </div>
         <div>
           <p className="text-white text-sm font-semibold">{t.name}</p>
@@ -39,7 +40,13 @@ function Card({ t }) {
 }
 
 export default function Testimonials() {
-  const track = [...testimonials, ...testimonials];
+  const startIndex = 1;
+  const rotated = [
+    ...testimonials.slice(startIndex),
+    ...testimonials.slice(0, startIndex),
+  ];
+
+  const track = [...rotated, ...rotated];
 
   return (
     <section className="py-24 px-6 md:px-0 max-w-full">

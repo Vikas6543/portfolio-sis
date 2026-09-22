@@ -5,7 +5,7 @@ export default function Home() {
       className="min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-16 max-w-5xl mx-auto"
     >
       <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-semibold text-slate-100 leading-tight">
-        Hola! I&apos;m Divya, I have a passion for building{" "}
+        Hi! I&apos;m Divya, I have a passion for building{" "}
         <span className="italic bg-gradient-to-r from-accent to-fuchsia-400 bg-clip-text text-transparent">
           memorable
         </span>{" "}
