@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const projects = [
   {
     label: "Enterprise UX • B2B • Marketplace",
@@ -9,6 +11,9 @@ const projects = [
     focus: "Marketplace Workflow",
     accentFrom: "from-orange-400",
     accentTo: "to-amber-500",
+    projectLink:
+      "https://www.behance.net/gallery/248913935/Rethinking-Form-Creation-UIUX-Case-Study",
+    imageLink: "/images/Rethinking-Form-Creation.png",
   },
   {
     label: "PRODUCT DESIGN • MOBILE UX • RETAIL & INVENTORY",
@@ -20,10 +25,13 @@ const projects = [
     focus: "Concept Product",
     accentFrom: "from-sky-400",
     accentTo: "to-indigo-500",
+    projectLink:
+      "https://www.behance.net/gallery/248922617/StockEase-UIUX-Case-Study",
+    imageLink: "/images/Stock-Ease.png",
   },
 ];
 
-function ProjectPreview({ accentFrom, accentTo }) {
+function ProjectPreview({ index, imageLink, projectLink }) {
   return (
     <div className="relative w-full h-56 sm:h-64 md:h-full rounded-xl bg-slate-950 border border-slate-800 overflow-hidden md:col-span-2">
       <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-800">
@@ -31,25 +39,49 @@ function ProjectPreview({ accentFrom, accentTo }) {
         <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
         <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
       </div>
-      <div className="flex h-full">
-        <div className="hidden sm:flex flex-col gap-2 w-24 border-r border-slate-800 p-3">
-          <div
-            className={`h-6 w-full rounded bg-gradient-to-r ${accentFrom} ${accentTo} opacity-80`}
-          />
-          {Array.from({ length: 5 }).map((_, i) => (
-            <div key={i} className="h-2.5 w-full rounded bg-slate-800" />
-          ))}
-        </div>
-        <div className="flex-1 p-4 space-y-3">
-          <div className="h-3 w-1/3 rounded bg-slate-800" />
-          <div className="h-20 w-full rounded-lg bg-slate-900 border border-slate-800" />
-          <div className="grid grid-cols-2 gap-2">
-            <div className="h-3 rounded bg-slate-800" />
-            <div className="h-3 rounded bg-slate-800" />
-          </div>
-        </div>
-      </div>
+      <Link
+        href={projectLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-full"
+      >
+        <img
+          src={imageLink}
+          alt="Project"
+          className={`w-full h-full object-cover object-${index === 0 ? "left" : "center"} transition-transform duration-300 hover:scale-105`}
+        />
+      </Link>
     </div>
+  );
+}
+
+function ViewProjectButton({ href, accentFrom, accentTo }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`group/btn relative inline-flex items-center gap-2 mt-8 w-fit rounded-[20px] border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-200 overflow-hidden transition-colors duration-300 hover:text-slate-950 hover:border-transparent`}
+    >
+      <span
+        className={`absolute inset-0 -z-10 bg-gradient-to-r ${accentFrom} ${accentTo} opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300`}
+      />
+      <span>View Project</span>
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        className="transition-transform duration-300 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"
+      >
+        <path d="M7 17L17 7" />
+        <path d="M7 7h10v10" />
+      </svg>
+    </a>
   );
 }
 
@@ -67,8 +99,9 @@ export default function Work() {
             className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 sm:p-6 grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-10 hover:border-accent/40 transition-colors"
           >
             <ProjectPreview
-              accentFrom={project.accentFrom}
-              accentTo={project.accentTo}
+              index={index}
+              imageLink={project.imageLink}
+              projectLink={project.projectLink}
             />
 
             <div className="flex flex-col justify-center md:col-span-3">
@@ -120,6 +153,12 @@ export default function Work() {
                   </p>
                 </div>
               </div>
+
+              <ViewProjectButton
+                href={project.projectLink}
+                accentFrom={project.accentFrom}
+                accentTo={project.accentTo}
+              />
             </div>
           </div>
         ))}
