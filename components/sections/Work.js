@@ -48,7 +48,7 @@ function ProjectPreview({ index, imageLink, projectLink }) {
         <img
           src={imageLink}
           alt="Project"
-          className={`w-full h-full object-cover object-${index === 0 ? "left" : "center"} transition-transform duration-300 hover:scale-105`}
+          className={`w-full h-full object-cover ${index === 0 ? "object-left" : "object-center"} transition-transform duration-300 hover:scale-105`}
         />
       </Link>
     </div>
