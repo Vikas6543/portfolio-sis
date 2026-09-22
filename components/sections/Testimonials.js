@@ -49,7 +49,7 @@ export default function Testimonials() {
   const track = [...rotated, ...rotated];
 
   return (
-    <section className="py-24 px-6 md:px-0 max-w-full">
+    <section className="py-14 px-6 md:px-0 max-w-full">
       <p className="text-slate-500 text-sm font-semibold tracking-widest uppercase mb-8 max-w-5xl mx-auto md:px-16">
         What People Say
       </p>

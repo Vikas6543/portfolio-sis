@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const projects = [
   {
     label: "Enterprise UX • B2B • Marketplace",
@@ -29,7 +31,7 @@ const projects = [
   },
 ];
 
-function ProjectPreview({ imageLink }) {
+function ProjectPreview({ index, imageLink, projectLink }) {
   return (
     <div className="relative w-full h-56 sm:h-64 md:h-full rounded-xl bg-slate-950 border border-slate-800 overflow-hidden md:col-span-2">
       <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-800">
@@ -37,13 +39,18 @@ function ProjectPreview({ imageLink }) {
         <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
         <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
       </div>
-      <div className="flex h-full">
+      <Link
+        href={projectLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex h-full"
+      >
         <img
           src={imageLink}
           alt="Project"
-          className="w-full h-full object-cover"
+          className={`w-full h-full object-cover object-${index === 0 ? "left" : "center"} transition-transform duration-300 hover:scale-105`}
         />
-      </div>
+      </Link>
     </div>
   );
 }
@@ -54,12 +61,12 @@ function ViewProjectButton({ href, accentFrom, accentTo }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group/btn relative inline-flex items-center gap-2 mt-8 w-fit rounded-full border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-200 overflow-hidden transition-colors duration-300 hover:text-slate-950 hover:border-transparent`}
+      className={`group/btn relative inline-flex items-center gap-2 mt-8 w-fit rounded-[20px] border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-200 overflow-hidden transition-colors duration-300 hover:text-slate-950 hover:border-transparent`}
     >
       <span
         className={`absolute inset-0 -z-10 bg-gradient-to-r ${accentFrom} ${accentTo} opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300`}
       />
-      <span>View project</span>
+      <span>View Project</span>
       <svg
         width="14"
         height="14"
@@ -91,7 +98,11 @@ export default function Work() {
             key={project.title}
             className="bg-slate-900/60 border border-slate-800 rounded-2xl p-4 sm:p-6 grid grid-cols-1 md:grid-cols-5 gap-6 md:gap-10 hover:border-accent/40 transition-colors"
           >
-            <ProjectPreview imageLink={project.imageLink} />
+            <ProjectPreview
+              index={index}
+              imageLink={project.imageLink}
+              projectLink={project.projectLink}
+            />
 
             <div className="flex flex-col justify-center md:col-span-3">
               <p className="text-accent text-xs font-semibold tracking-widest uppercase mb-3">

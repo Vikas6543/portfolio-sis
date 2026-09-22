@@ -10,7 +10,7 @@ export default function Page() {
   return (
     <>
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-10">
         <Home />
         <Work />
         {/* <About /> */}
