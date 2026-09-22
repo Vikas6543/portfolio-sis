@@ -1,19 +1,28 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 
 const links = [
-  { id: "home", label: "home" },
-  { id: "work", label: "work" },
-  { id: "about", label: "about" },
-  { id: "resume", label: "resume" },
+  { id: "home", label: "home", href: "/#home" },
+  { id: "work", label: "work", href: "/#work" },
+  { id: "about", label: "about", href: "/about" },
+  { id: "resume", label: "resume", href: "/#resume" },
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const router = useRouter();
   const [active, setActive] = useState("home");
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
+    if (pathname === "/about") {
+      setActive("about");
+      return;
+    }
+
     const sections = links
       .map((l) => document.getElementById(l.id))
       .filter(Boolean);
@@ -31,10 +40,17 @@ export default function Navbar() {
 
     sections.forEach((section) => observer.observe(section));
     return () => observer.disconnect();
-  }, []);
+  }, [pathname]);
 
   const handleClick = (id) => {
     setOpen(false);
+    const link = links.find((item) => item.id === id);
+
+    if (pathname !== "/" && id !== "about") {
+      router.push(link.href);
+      return;
+    }
+
     const el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
@@ -42,19 +58,27 @@ export default function Navbar() {
   return (
     <header className="fixed top-4 left-0 right-0 z-50 px-4">
       <nav className="max-w-3xl mx-auto flex items-center justify-between gap-4 bg-slate-900/70 backdrop-blur-lg border border-slate-800 rounded-full pl-6 pr-2 py-2 shadow-lg shadow-black/40">
-        <button
-          onClick={() => handleClick("home")}
+        <Link
+          href="/#home"
+          onClick={() => setOpen(false)}
           className="font-script text-2xl text-white leading-none relative"
         >
           Divya
           <span className="absolute -bottom-1 left-0 right-2 h-0.5 bg-gradient-to-r from-accent to-fuchsia-500 rounded-full" />
-        </button>
+        </Link>
 
         <ul className="hidden md:flex items-center gap-6">
           {links.map((link) => (
             <li key={link.id}>
-              <button
-                onClick={() => handleClick(link.id)}
+              <Link
+                href={link.href}
+                onClick={(event) => {
+                  if (pathname === "/" && link.id !== "about") {
+                    event.preventDefault();
+                    handleClick(link.id);
+                  }
+                  setOpen(false);
+                }}
                 className={`text-sm font-medium lowercase transition-colors ${
                   active === link.id
                     ? "text-white"
@@ -62,7 +86,7 @@ export default function Navbar() {
                 }`}
               >
                 {link.label}
-              </button>
+              </Link>
             </li>
           ))}
         </ul>
@@ -115,14 +139,21 @@ export default function Navbar() {
         <ul className="md:hidden mt-2 max-w-3xl mx-auto flex flex-col items-center gap-4 py-6 bg-slate-900/90 backdrop-blur-lg border border-slate-800 rounded-2xl">
           {links.map((link) => (
             <li key={link.id}>
-              <button
-                onClick={() => handleClick(link.id)}
+              <Link
+                href={link.href}
+                onClick={(event) => {
+                  if (pathname === "/" && link.id !== "about") {
+                    event.preventDefault();
+                    handleClick(link.id);
+                  }
+                  setOpen(false);
+                }}
                 className={`text-base font-medium lowercase ${
                   active === link.id ? "text-white" : "text-slate-400"
                 }`}
               >
                 {link.label}
-              </button>
+              </Link>
             </li>
           ))}
           <li>
