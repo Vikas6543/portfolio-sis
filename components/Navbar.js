@@ -5,10 +5,10 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
 const links = [
-  { id: "home", label: "home", href: "/#home" },
-  { id: "work", label: "work", href: "/#work" },
-  { id: "about", label: "about", href: "/about" },
-  { id: "resume", label: "resume", href: "/#resume" },
+  { id: "home", label: "Home", href: "/#home" },
+  { id: "work", label: "Work", href: "/#work" },
+  { id: "about", label: "About", href: "/about" },
+  { id: "resume", label: "Resume", href: "/#resume" },
 ];
 
 export default function Navbar() {
@@ -79,7 +79,7 @@ export default function Navbar() {
                   }
                   setOpen(false);
                 }}
-                className={`text-sm font-medium lowercase transition-colors ${
+                className={`text-sm font-medium transition-colors ${
                   active === link.id
                     ? "text-white"
                     : "text-slate-400 hover:text-white"

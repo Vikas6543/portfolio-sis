@@ -1,18 +1,15 @@
 "use client";
 
+import Link from "next/link";
+
 const links = [
-  { id: "home", label: "home" },
-  { id: "work", label: "work" },
-  { id: "about", label: "about" },
-  { id: "resume", label: "resume" },
+  { id: "home", label: "Home" },
+  { id: "work", label: "Work" },
+  { id: "about", label: "About" },
+  { id: "resume", label: "Resume" },
 ];
 
 export default function Footer() {
-  const handleClick = (id) => {
-    const el = document.getElementById(id);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <footer className="md:py-20 px-6 border-t border-slate-900 text-center">
       <p className="font-script text-3xl text-white">divya</p>
@@ -26,12 +23,12 @@ export default function Footer() {
       <ul className="flex items-center justify-center gap-6 mt-8">
         {links.map((link) => (
           <li key={link.id}>
-            <button
-              onClick={() => handleClick(link.id)}
-              className="text-sm text-slate-400 hover:text-white transition-colors lowercase"
+            <Link
+              href={`/#${link.id}`}
+              className="text-sm text-slate-400 hover:text-white transition-colors"
             >
               {link.label}
-            </button>
+            </Link>
           </li>
         ))}
       </ul>
