@@ -21,7 +21,7 @@ const testimonials = [
 
 function Card({ t }) {
   return (
-    <div className="w-[85vw] sm:w-[380px] shrink-0 bg-slate-900/60 border border-slate-800 rounded-xl p-6 flex flex-col hover:border-accent/40 transition-colors">
+    <div className="w-[60vw] sm:w-[360px] shrink-0 bg-slate-900/60 border border-slate-800 rounded-xl p-6 flex flex-col hover:border-accent/40 transition-colors">
       <p className="text-slate-300 text-base leading-relaxed flex-1">
         &ldquo;{t.quote}&rdquo;
       </p>
@@ -54,7 +54,7 @@ export default function Testimonials() {
         What People Say
       </p>
 
-      <div className="group overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+      <div className="group mx-0 md:mx-[100px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
         <div className="flex gap-6 w-max animate-marquee group-hover:[animation-play-state:paused]">
           {track.map((t, i) => (
             <Card key={`${t.name}-${i}`} t={t} />
