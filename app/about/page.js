@@ -54,7 +54,7 @@ export default function AboutPage() {
                 <p className="mt-1 text-sm text-pink-400">
                   Torry Harris Integration Solutions
                 </p>
-                <p className="mt-1 text-sm">vasanth Nagar, Bangalore, India</p>
+                <p className="mt-1 text-sm">Vasanth Nagar, Bangalore, India</p>
                 <p className="mt-2 font-mono text-sm tracking-wide text-slate-500">
                   NOV 2021 - Current
                 </p>
@@ -89,6 +89,99 @@ export default function AboutPage() {
                   specifications and walkthroughs.
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div className="mt-20 border-t border-sky-500/20 pt-12 md:pt-14">
+            <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
+              HOW I WORK
+            </h2>
+
+            <div className="mt-8 grid gap-6 md:grid-cols-3">
+              <div className="rounded-xl border border-sky-500/20 bg-slate-900/80 p-5 shadow-[0_0_24px_rgba(14,165,233,0.05)]">
+                <h3 className="text-xl font-medium leading-tight text-slate-100">
+                  Understand the real workflow
+                </h3>
+                <p className="mt-5 text-[15px] leading-7 text-slate-300">
+                  Interviews, observation, and analysis of existing products
+                  help me understand real user needs, workflows, and pain points
+                  before proposing solutions.
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-sky-500/20 bg-slate-900/80 p-5 shadow-[0_0_24px_rgba(14,165,233,0.05)]">
+                <h3 className="text-xl font-medium leading-tight text-slate-100">
+                  Structure &amp; design systems
+                </h3>
+                <p className="mt-5 text-[15px] leading-7 text-slate-300">
+                  I define information architecture and user flows first, then
+                  create wireframes and reusable design systems that keep the
+                  experience clear and consistent.
+                </p>
+              </div>
+
+              <div className="rounded-xl border border-sky-500/20 bg-slate-900/80 p-5 shadow-[0_0_24px_rgba(14,165,233,0.05)]">
+                <h3 className="text-xl font-medium leading-tight text-slate-100">
+                  Prototype, validate &amp; iterate
+                </h3>
+                <p className="mt-5 text-[15px] leading-7 text-slate-300">
+                  I turn ideas into interactive prototypes, validate them with
+                  users and internal teams, and refine the experience based on
+                  what actually works.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-16 grid grid-cols-12 gap-16 border-t border-sky-500/20 *:pt-16 md:mt-20 md:gap-20">
+              <div className="md:col-span-8">
+                <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
+                  CAPABILITIES
+                </h2>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  {[
+                    "UX Design",
+                    "UI Design",
+                    "Product Design",
+                    "Design Thinking",
+                    "User-Centered Design",
+                    "User Research",
+                    "User Personas",
+                    "Empathy Mapping",
+                    "Information Architecture",
+                    "User Flows",
+                    "Wireframing",
+                    "Prototyping",
+                    "Interaction Design",
+                    "Design Systems",
+                    "Responsive Design",
+                    "Accessibility & WCAG",
+                    "Usability Testing",
+                    "Developer Handoff",
+                  ].map((item) => (
+                    <span
+                      key={item}
+                      className="inline-flex items-center justify-center rounded-lg border border-slate-700 bg-slate-950/60 px-3 py-2 text-sm text-slate-200"
+                    >
+                      {item}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="md:col-span-4">
+                <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
+                  TOOLS
+                </h2>
+                <ul className="mt-6 space-y-4 text-lg text-slate-200">
+                  <li>Figma</li>
+                  <li>FigJam</li>
+                  <li>Framer</li>
+                  <li>Figma Make</li>
+                  <li>Google Stitch</li>
+                  <li>Lovable</li>
+                  <li>Claude</li>
+                </ul>
+              </div>
             </div>
           </div>
         </section>
