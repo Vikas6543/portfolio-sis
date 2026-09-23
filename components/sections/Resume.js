@@ -2,7 +2,7 @@ export default function Resume() {
   return (
     <section
       id="resume"
-      className="min-h-screen flex flex-col items-center justify-center text-center py-24 px-6 md:px-16 max-w-5xl mx-auto"
+      className="md:min-h-screen flex flex-col items-center justify-center text-center py-24 px-6 md:px-16 max-w-5xl mx-auto"
     >
       <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
         My Resume

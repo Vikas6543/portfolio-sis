@@ -13,7 +13,6 @@ export default function Page() {
       <main className="pt-10">
         <Home />
         <Work />
-        {/* <About /> */}
         <Testimonials />
         <Resume />
       </main>

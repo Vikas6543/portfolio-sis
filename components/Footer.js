@@ -14,7 +14,7 @@ export default function Footer() {
   };
 
   return (
-    <footer className="py-20 px-6 border-t border-slate-900 text-center">
+    <footer className="md:py-20 px-6 border-t border-slate-900 text-center">
       <p className="font-script text-3xl text-white">divya</p>
 
       <div className="flex items-center justify-center gap-3 mt-6 text-slate-500 text-sm">
