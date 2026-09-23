@@ -34,11 +34,6 @@ const projects = [
 function ProjectPreview({ index, imageLink, projectLink }) {
   return (
     <div className="relative w-full h-56 sm:h-64 md:h-full rounded-xl bg-slate-950 border border-slate-800 overflow-hidden md:col-span-2">
-      <div className="flex items-center gap-2 px-4 py-3 border-b border-slate-800">
-        <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
-        <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
-        <span className="w-2.5 h-2.5 rounded-full bg-slate-700" />
-      </div>
       <Link
         href={projectLink}
         target="_blank"
