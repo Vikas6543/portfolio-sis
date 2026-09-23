@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "About | Divya",
@@ -9,7 +10,7 @@ export default function AboutPage() {
   return (
     <div className="px-6 md:px-16 max-w-7xl mx-auto">
       <Navbar />
-      <main className="min-h-screen bg-black px-4 pb-20 pt-28 text-slate-400 sm:px-8 md:px-12">
+      <main className="min-h-screen bg-black px-4 pt-28 text-slate-400 sm:px-8 md:px-12">
         <section className="mx-auto max-w-6xl pb-12 pt-1 shadow-[0_0_24px_rgba(14,165,233,0.05)] sm:pb-16">
           <div className="grid md:gap-14 grid-cols-12">
             <div className="md:col-span-8 col-span-12">
@@ -186,6 +187,8 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
+
+      <Footer />
     </div>
   );
 }
