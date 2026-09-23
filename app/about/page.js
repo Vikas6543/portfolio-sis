@@ -133,8 +133,9 @@ export default function AboutPage() {
               </div>
             </div>
 
+            {/* capabilities */}
             <div className="mt-16 grid grid-cols-12 gap-16 border-t border-sky-500/20 *:pt-16 md:mt-20 md:gap-20">
-              <div className="md:col-span-8">
+              <div className="col-span-12 md:col-span-8">
                 <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
                   CAPABILITIES
                 </h2>
@@ -169,18 +170,22 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="md:col-span-4">
+              <div className="col-span-12 md:col-span-4 -mt-10 md:mt-0">
                 <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
                   TOOLS
                 </h2>
-                <ul className="mt-6 space-y-4 text-lg text-slate-200">
-                  <li>Figma</li>
-                  <li>FigJam</li>
-                  <li>Framer</li>
-                  <li>Figma Make</li>
-                  <li>Google Stitch</li>
-                  <li>Lovable</li>
-                  <li>Claude</li>
+                <ul className="mt-6 text-[1.1rem] text-slate-200 flex gap-14">
+                  <div className="flex flex-col gap-2">
+                    <li>Figma</li>
+                    <li>FigJam</li>
+                    <li>Framer</li>
+                    <li>Figma Make</li>
+                  </div>
+                  <div className="flex flex-col gap-2">
+                    <li>Google Stitch</li>
+                    <li>Lovable</li>
+                    <li>Claude</li>
+                  </div>
                 </ul>
               </div>
             </div>
