@@ -7,11 +7,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "Neutral/Neutral Grey 80": "#334155",
         accent: "#ec4899",
       },
       fontFamily: {
         script: ["var(--font-script)", "cursive"],
         serif: ["var(--font-serif)", "serif"],
+        sans: ["Inter", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       keyframes: {
         marquee: {

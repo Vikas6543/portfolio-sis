@@ -56,8 +56,8 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-4 left-0 right-0 z-50 px-4">
-      <nav className="max-w-3xl mx-auto flex items-center justify-between gap-4 bg-slate-900/70 backdrop-blur-lg border border-slate-800 rounded-full pl-6 pr-2 py-2 shadow-lg shadow-black/40">
+    <header className="fixed top-[24px] left-0 right-0 z-50 px-4">
+      <nav className="max-w-[800px] mx-auto flex items-center justify-between gap-4 bg-slate-900/70 backdrop-blur-lg border border-slate-800 rounded-[12px] py-[14px] px-[16px] shadow-lg shadow-black/40">
         <Link
           href="/#home"
           onClick={() => setOpen(false)}
@@ -79,7 +79,7 @@ export default function Navbar() {
                   }
                   setOpen(false);
                 }}
-                className={`text-sm font-medium transition-colors ${
+                className={`text-[16px] font-medium transition-colors ${
                   active === link.id
                     ? "text-white"
                     : "text-slate-400 hover:text-white"
@@ -93,7 +93,7 @@ export default function Navbar() {
 
         <a
           href="mailto:divyapanchakshire@gmail.com"
-          className="hidden sm:inline-flex items-center gap-1.5 border border-accent/60 text-accent text-sm font-medium px-4 py-2 rounded-full hover:bg-accent/10 transition-colors"
+          className="hidden sm:inline-flex items-center gap-1.5 border border-accent/60 text-accent text-sm font-medium px-4 py-[10px] rounded-[12px] hover:bg-accent/10 transition-colors"
         >
           Contact
           <svg
