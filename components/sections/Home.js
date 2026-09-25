@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col justify-center items-center text-center px-6 md:px-16 max-w-5xl mx-auto"
+      className="min-h-screen w-full min-w-0 max-w-full overflow-x-hidden flex flex-col justify-center items-center text-center px-6 md:max-w-5xl md:px-16 mx-auto"
     >
       <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-semibold text-slate-100 leading-tight">
         Hi! I&apos;m Divya, I have a passion for building{" "}
