@@ -10,10 +10,10 @@ export default function AboutPage() {
   return (
     <div className="px-6 md:px-16 max-w-7xl mx-auto mt-16">
       <Navbar />
-      <main className="min-h-screen bg-black px-4 pt-28 text-slate-400 sm:px-8 md:px-12">
+      <main className="min-h-screen bg-black px-4 pt-0 md:pt-28 text-slate-400 sm:px-8 md:px-12">
         <section className="mx-auto max-w-6xl pb-12 pt-1 shadow-[0_0_24px_rgba(14,165,233,0.05)] sm:pb-16">
           <div className="grid md:gap-14 grid-cols-12">
-            <div className="md:col-span-8 col-span-12">
+            <div className="order-2 col-span-12 md:order-1 md:col-span-8">
               <h1 className="max-w-[841px] font-[Playfair-Display] text-3xl leading-[1.08] text-slate-100 sm:text-4xl md:text-5xl">
                 I design products where complex workflows meet everyday users.
               </h1>
@@ -38,7 +38,7 @@ export default function AboutPage() {
                 </p>
               </div>
             </div>
-            <div className="md:col-span-4 md:flex justify-center items-center flex-row hidden ">
+            <div className="order-1 col-span-12 md:order-2 md:col-span-4 md:flex justify-center items-center flex-row mb-10 md:mb-0">
               <img
                 src="/images/Divya-sis-image.jpeg"
                 alt="Divya"
