@@ -90,7 +90,7 @@ export default function Work() {
         Featured Projects
       </p>
 
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-[60px]">
         {projects.map((project, index) => (
           <div
             key={project.title}
@@ -113,7 +113,7 @@ export default function Work() {
                 {project.description}
               </p>
 
-              <div className="flex gap-10">
+              <div className="flex gap-5 md:gap-10 flex-wrap">
                 <div>
                   <p className="text-slate-500 text-xs font-semibold tracking-widest uppercase mb-1">
                     Role

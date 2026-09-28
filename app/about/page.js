@@ -51,7 +51,7 @@ export default function AboutPage() {
             <h2 className="text-xs md:text-[20px] font-semibold uppercase tracking-[0.12em] text-slate-200">
               Experience
             </h2>
-            <div className="mt-8 grid gap-8 md:grid-cols-[460px_minmax(0,1fr)] md:gap-12">
+            <div className="mt-8 grid gap-8 md:grid-cols-[450px_minmax(0,1fr)] md:gap-12">
               <div>
                 <h3 className="text-[24px] font-medium text-slate-100">
                   UX/UI Designer
@@ -66,7 +66,7 @@ export default function AboutPage() {
                   NOV 2021 - Current
                 </p>
               </div>
-              <ul className="list-disc space-y-2 pl-4 text-sm marker:text-slate-500 text-[18px] text-[#94A3B8F2] leading-[28px] font-[400] font-inter">
+              <ul className="list-disc space-y-2 pl-4 text-sm marker:text-slate-500 text-[19px] text-[#94A3B8F2] leading-[28px] font-[400] font-inter">
                 <li>
                   Design enterprise and digital product experiences across web
                   and mobile.
