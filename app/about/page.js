@@ -66,32 +66,32 @@ export default function AboutPage() {
                   NOV 2021 - Current
                 </p>
               </div>
-              <ul className="list-disc space-y-2 pl-4 text-sm marker:text-slate-500 text-[20px] text-[#94A3B8F2] leading-[28px] font-[400] font-inter">
-                <li>
+              <ul className="list-disc space-y-2 pl-4 text-sm marker:text-slate-500 text-[#94A3B8F2] leading-[28px] font-[400] font-inter">
+                <li className="text-[15px] md:text-[19px]">
                   Design enterprise and digital product experiences across web
                   and mobile.
                 </li>
-                <li>
+                <li className="text-[15px] md:text-[19px]">
                   Translate complex business requirements into intuitive user
                   flows and interfaces.
                 </li>
-                <li>
+                <li className="text-[15px] md:text-[19px]">
                   Conduct user and stakeholder research to understand workflows
                   and pain points.
                 </li>
-                <li>
+                <li className="text-[15px] md:text-[19px]">
                   Create wireframes, high-fidelity UI, and interactive
                   prototypes.
                 </li>
-                <li>
+                <li className="text-[15px] md:text-[19px]">
                   Collaborate closely with product managers, developers,
                   business teams, and presales teams.
                 </li>
-                <li>
+                <li className="text-[15px] md:text-[19px]">
                   Create reusable UI patterns and maintain consistency across
                   products.
                 </li>
-                <li>
+                <li className="text-[15px] md:text-[19px]">
                   Support developer handoff through detailed design
                   specifications and walkthroughs.
                 </li>
