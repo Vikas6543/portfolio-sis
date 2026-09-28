@@ -66,7 +66,7 @@ export default function AboutPage() {
                   NOV 2021 - Current
                 </p>
               </div>
-              <ul className="list-disc space-y-2 pl-4 text-sm marker:text-slate-500 text-[19px] text-[#94A3B8F2] leading-[28px] font-[400] font-inter">
+              <ul className="list-disc space-y-2 pl-4 text-sm marker:text-slate-500 text-[20px] text-[#94A3B8F2] leading-[28px] font-[400] font-inter">
                 <li>
                   Design enterprise and digital product experiences across web
                   and mobile.
