@@ -4,7 +4,7 @@ export default function Home() {
       id="home"
       className="min-h-screen w-full min-w-0 max-w-full overflow-x-hidden flex flex-col justify-center items-center text-center px-6 md:max-w-5xl md:px-16 mx-auto"
     >
-      <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl font-semibold text-slate-100 leading-tight">
+      <h1 className="font-serif text-3xl sm:text-5xl md:text-[64px] font-semibold text-slate-100 leading-[74px]">
         Hi! I&apos;m Divya, I have a passion for building{" "}
         <span className="italic bg-gradient-to-r from-accent to-fuchsia-400 bg-clip-text text-transparent">
           memorable
@@ -18,7 +18,7 @@ export default function Home() {
 
       <a
         href="#work"
-        className="mt-10 inline-flex items-center gap-2 bg-gradient-to-r from-accent to-fuchsia-500 text-white font-medium px-8 py-4 rounded-full hover:opacity-90 transition-opacity shadow-lg shadow-accent/20"
+        className="mt-10 inline-flex items-center gap-2 bg-gradient-to-r from-accent to-fuchsia-500 text-white font-medium px-8 py-4 rounded-[12px] hover:opacity-90 transition-opacity shadow-lg shadow-accent/20 text-[10px] sm:text-[14px] md:text-[16px]"
       >
         Let&apos;s Connect
         <svg

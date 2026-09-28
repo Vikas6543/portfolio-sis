@@ -54,7 +54,7 @@ export default function Testimonials() {
         What People Say
       </p>
 
-      <div className="group mx-0 md:mx-[100px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+      <div className="group mx-0 md:mx-[150px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
         <div className="flex gap-6 w-max animate-marquee group-hover:[animation-play-state:paused]">
           {track.map((t, i) => (
             <Card key={`${t.name}-${i}`} t={t} />

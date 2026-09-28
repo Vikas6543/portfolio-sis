@@ -84,7 +84,7 @@ export default function Work() {
   return (
     <section
       id="work"
-      className="py-24 px-6 md:px-16 md:max-w-5xl mx-auto max-w-full min-w-0 w-full overflow-x-hidden"
+      className="py-24 px-6 md:px-16 md:max-w-[70rem] mx-auto max-w-full min-w-0 w-full overflow-x-hidden"
     >
       <p className="text-slate-500 text-sm font-semibold tracking-widest uppercase mb-10">
         Featured Projects

@@ -109,7 +109,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-medium leading-[28px] text-[#F1F5F9]">
                   Understand the real workflow
                 </h3>
-                <p className="mt-5 text-[18px] font-[400] leading-[26px] text-[#94A3B8]">
+                <p className="mt-5 text-[17px] font-[400] leading-[26px] text-[#94A3B8]">
                   Interviews, observation, and analysis of existing products
                   help me understand real user needs, workflows, and pain points
                   before proposing solutions.
@@ -120,7 +120,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-medium leading-[28px] text-[#F1F5F9]">
                   Structure &amp; design systems
                 </h3>
-                <p className="mt-5 text-[18px] font-[400] leading-[26px] text-[#94A3B8]">
+                <p className="mt-5 text-[17px] font-[400] leading-[26px] text-[#94A3B8]">
                   I define information architecture and user flows first, then
                   create wireframes and reusable design systems that keep the
                   experience clear and consistent.
@@ -131,7 +131,7 @@ export default function AboutPage() {
                 <h3 className="text-xl font-medium leading-[28px] text-[#F1F5F9]">
                   Prototype, validate &amp; iterate
                 </h3>
-                <p className="mt-5 text-[18px] font-[400] leading-[26px] text-[#94A3B8]">
+                <p className="mt-5 text-[17px] font-[400] leading-[26px] text-[#94A3B8]">
                   I turn ideas into interactive prototypes, validate them with
                   users and internal teams, and refine the experience based on
                   what actually works.
@@ -145,7 +145,7 @@ export default function AboutPage() {
                 <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
                   CAPABILITIES
                 </h2>
-                <div className="mt-[26px] flex flex-wrap gap-3">
+                <div className="mt-[26px] flex flex-wrap gap-3 w-[360px] md:w-[100%]">
                   {[
                     "UX Design",
                     "UI Design",

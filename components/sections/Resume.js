@@ -15,13 +15,13 @@ export default function Resume() {
         <a
           href="/Divya_Sis_Resume.pdf"
           download
-          className="border border-accent text-accent px-8 py-3 rounded font-medium hover:bg-accent/10 transition-colors"
+          className="border border-accent text-accent px-8 py-3 rounded-[16px] font-medium hover:bg-accent/10 transition-colors"
         >
           Download Resume
         </a>
         <a
           href="mailto:divyapanchakshire@gmail.com"
-          className="border border-slate-700 text-slate-300 px-8 py-3 rounded font-medium hover:bg-slate-800 transition-colors"
+          className="border border-slate-700 text-slate-300 px-8 py-3 rounded-[16px] font-medium hover:bg-slate-800 transition-colors"
         >
           Say Hello
         </a>
