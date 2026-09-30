@@ -48,7 +48,7 @@ export default function AboutPage() {
           </div>
 
           <div className="mt-16 border-t border-[#1d2841] pt-10 md:mt-16">
-            <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10 mt-4">
+            <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mt-4">
               Experience
             </p>
             <div className="mt-8 grid gap-8 md:grid-cols-[450px_minmax(0,1fr)] md:gap-12">
