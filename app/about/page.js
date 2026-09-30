@@ -105,7 +105,7 @@ export default function AboutPage() {
             </h2>
 
             <div className="mt-8 grid gap-6 md:grid-cols-3">
-              <div className="rounded-[12px] w-[100%] border border-[#1E293B] bg-slate-900/80 p-[24px] shadow-[0_0_24px_rgba(14,165,233,0.05)] text-[#0F172A99]">
+              <div className="rounded-xl w-[100%] bg-slate-900/60 border border-slate-800 p-[24px] text-[#0F172A99] hover:border-accent/40 transition-colors">
                 <h3 className="text-[14px] md:text-[18px] font-medium leading-[28px] text-[#F1F5F9]">
                   Understand the real workflow
                 </h3>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="rounded-[12px] border border-[#1E293B] bg-slate-900/80 p-[24px] shadow-[0_0_24px_rgba(14,165,233,0.05)] text-[#0F172A99]">
+              <div className="rounded-xl w-[100%] bg-slate-900/60 border border-slate-800 p-[24px] text-[#0F172A99] hover:border-accent/40 transition-colors">
                 <h3 className="text-[14px] md:text-[18px] font-medium leading-[28px] text-[#F1F5F9]">
                   Structure &amp; design systems
                 </h3>
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 </p>
               </div>
 
-              <div className="rounded-[12px] border border-[#1E293B] bg-slate-900/80 p-[24px] shadow-[0_0_24px_rgba(14,165,233,0.05)] text-[#0F172A99]">
+              <div className="rounded-xl w-[100%] bg-slate-900/60 border border-slate-800 p-[24px] text-[#0F172A99] hover:border-accent/40 transition-colors">
                 <h3 className="text-[14px] md:text-[18px] font-medium leading-[28px] text-[#F1F5F9]">
                   Prototype, validate &amp; iterate
                 </h3>
