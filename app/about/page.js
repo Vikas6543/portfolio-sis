@@ -176,7 +176,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="col-span-12 md:col-span-4 -mt-10 md:mt-0">
+              <div className="col-span-12 md:col-span-4 -mt-10 md:mt-0 md:pl-28">
                 <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
                   TOOLS
                 </h2>
