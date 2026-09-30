@@ -47,10 +47,10 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="mt-16 border-t border-sky-500/20 pt-10 md:mt-20">
-            <h2 className="text-[15px] md:text-[21px] font-semibold uppercase tracking-[0.12em] text-slate-200">
+          <div className="mt-16 border-t border-[#1d2841] pt-10 md:mt-16">
+            <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10 mt-4">
               Experience
-            </h2>
+            </p>
             <div className="mt-8 grid gap-8 md:grid-cols-[450px_minmax(0,1fr)] md:gap-12">
               <div>
                 <h3 className="text-[14px] md:text-[18px] font-medium text-slate-100">
@@ -99,10 +99,10 @@ export default function AboutPage() {
             </div>
           </div>
 
-          <div className="mt-14 border-t border-sky-500/20 pt-12 md:pt-14">
-            <h2 className="text-[15px] md:text-[21px] font-semibold uppercase tracking-[0.12em] text-slate-200">
+          <div className="mt-14 border-t border-[#1d2841] pt-12 md:pt-14">
+            <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10">
               HOW I WORK
-            </h2>
+            </p>
 
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               <div className="rounded-xl w-[100%] bg-slate-900/60 border border-slate-800 p-[24px] text-[#0F172A99] hover:border-accent/40 transition-colors">
@@ -140,11 +140,11 @@ export default function AboutPage() {
             </div>
 
             {/* capabilities */}
-            <div className="mt-16 grid grid-cols-12 gap-16 border-t border-sky-500/20 *:pt-16 md:mt-20 md:gap-20">
+            <div className="mt-16 grid grid-cols-12 gap-16 border-t border-[#1d2841] *:pt-16 md:mt-20 md:gap-20">
               <div className="col-span-12 md:col-span-8">
-                <h2 className="text-[15px] md:text-[21px] font-semibold uppercase tracking-[0.12em] text-slate-200">
+                <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10">
                   CAPABILITIES
-                </h2>
+                </p>
                 <div className="mt-[26px] flex flex-wrap gap-3 w-[360px] md:w-[100%]">
                   {[
                     "UX Design",
@@ -177,9 +177,9 @@ export default function AboutPage() {
               </div>
 
               <div className="col-span-12 md:col-span-4 -mt-10 md:mt-0 md:pl-28">
-                <h2 className="text-xs md:text-lg font-semibold uppercase tracking-[0.12em] text-slate-200">
+                <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10">
                   TOOLS
-                </h2>
+                </p>
                 <ul className="mt-6 text-[#94A3B8F2] flex gap-14 text-[14px] md:text-[18px]">
                   <div className="flex flex-col gap-3">
                     <li>Figma</li>

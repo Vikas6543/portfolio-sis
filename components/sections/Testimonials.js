@@ -49,13 +49,12 @@ export default function Testimonials() {
   const track = [...rotated, ...rotated];
 
   return (
-    // <section className="md:pt-8 pb-20 px-6 md:px-0 max-w-full">
-    <section className="px-6 md:px-0 max-w-full py-[98px]">
-      <p className="text-slate-500 text-sm font-semibold tracking-widest uppercase mb-8 max-w-5xl mx-auto md:px-16">
+    <section className="md:px-0 max-w-full py-[98px]">
+      <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-8 max-w-5xl mx-auto md:px-4">
         What People Say
       </p>
 
-      <div className="group mx-0 md:mx-[150px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
+      <div className="group mx-0 md:mx-[120px] overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_5%,black_95%,transparent)]">
         <div className="flex gap-6 w-max animate-marquee group-hover:[animation-play-state:paused]">
           {track.map((t, i) => (
             <Card key={`${t.name}-${i}`} t={t} />

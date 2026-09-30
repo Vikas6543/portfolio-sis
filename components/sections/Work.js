@@ -56,11 +56,8 @@ function ViewProjectButton({ href, accentFrom, accentTo }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className={`group/btn relative inline-flex items-center gap-2 mt-8 w-fit rounded-[12px] border border-slate-700 px-5 py-2.5 text-sm font-medium text-slate-200 overflow-hidden transition-colors duration-300 hover:text-slate-950 hover:border-transparent`}
+      className={`group/btn relative inline-flex items-center gap-2 mt-8 w-fit rounded-[12px] border border-accent/60 text-accent px-5 py-2.5 text-sm font-medium overflow-hidden duration-300 hover:bg-accent/10 transition-colors`}
     >
-      <span
-        className={`absolute inset-0 -z-10 bg-gradient-to-r ${accentFrom} ${accentTo} opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300`}
-      />
       <span>View Project</span>
       <svg
         width="14"
@@ -86,7 +83,7 @@ export default function Work() {
       id="work"
       className="pt-24 px-6 md:px-16 md:max-w-[70rem] mx-auto max-w-full min-w-0 w-full overflow-x-hidden"
     >
-      <p className="text-slate-500 text-sm font-semibold tracking-widest uppercase mb-10">
+      <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10">
         Featured Projects
       </p>
 
