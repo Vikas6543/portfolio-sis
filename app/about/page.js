@@ -143,12 +143,12 @@ export default function AboutPage() {
             </div>
 
             {/* capabilities */}
-            <div className="mt-16 grid grid-cols-12 gap-16 border-t border-[#1d2841] *:pt-16 md:mt-20 md:gap-20">
-              <div className="col-span-12 md:col-span-8">
+            <div className="mt-16 grid grid-cols-1 gap-y-0 border-t border-[#1d2841] *:pt-16 md:mt-20 md:grid-cols-12 md:gap-20">
+              <div className="min-w-0 md:col-span-8">
                 <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10">
                   CAPABILITIES
                 </p>
-                <div className="mt-[26px] flex flex-wrap gap-3 w-[360px] md:w-[100%]">
+                <div className="mt-[26px] flex flex-wrap gap-3 w-full">
                   {[
                     "UX Design",
                     "UI Design",
