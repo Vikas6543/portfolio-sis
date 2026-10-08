@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 
@@ -56,7 +57,12 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-[24px] left-0 right-0 z-50 px-4">
+    <motion.header
+      initial={{ opacity: 0, y: -16 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="fixed top-[24px] left-0 right-0 z-50 px-4"
+    >
       <nav className="max-w-[800px] mx-auto flex items-center justify-between gap-4 bg-slate-900/70 backdrop-blur-lg border border-slate-800 rounded-[12px] py-[14px] px-[16px] shadow-lg shadow-black/40">
         <Link
           href="/#home"
@@ -166,6 +172,6 @@ export default function Navbar() {
           </li>
         </ul>
       )}
-    </header>
+    </motion.header>
   );
 }
