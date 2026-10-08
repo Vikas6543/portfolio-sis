@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <section
       id="home"
-      className="mt-[120px] md:min-h-screen w-full min-w-0 max-w-full overflow-x-hidden flex flex-col justify-center items-center text-center px-6 md:max-w-5xl md:px-16 mx-auto"
+      className="mt-[120px] md:mt-0 md:min-h-screen w-full min-w-0 max-w-full overflow-x-hidden flex flex-col justify-center items-center text-center px-6 md:max-w-5xl md:px-16 mx-auto"
     >
       <h1 className="font-serif text-[24px] sm:text-5xl md:text-[64px] font-semibold text-slate-100 md:leading-[74px]">
         Hi! I&apos;m Divya, I have a passion for building{" "}
@@ -18,7 +18,7 @@ export default function Home() {
 
       <a
         href="#work"
-        className="mt-10 md:mt-0 inline-flex items-center gap-2 bg-gradient-to-r from-accent to-fuchsia-500 text-white font-medium px-8 py-4 rounded-[12px] hover:opacity-90 transition-opacity shadow-lg shadow-accent/20 text-[13px] md:text-[16px]"
+        className="mt-10 inline-flex items-center gap-2 bg-gradient-to-r from-accent to-fuchsia-500 text-white font-medium px-8 py-4 rounded-[12px] hover:opacity-90 transition-opacity shadow-lg shadow-accent/20 text-[13px] md:text-[16px]"
       >
         Let&apos;s Connect
         <svg
