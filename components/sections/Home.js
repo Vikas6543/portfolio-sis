@@ -18,7 +18,7 @@ export default function Home() {
 
       <a
         href="#work"
-        className="mt-10 inline-flex items-center gap-2 bg-gradient-to-r from-accent to-fuchsia-500 text-white font-medium px-8 py-4 rounded-[12px] hover:opacity-90 transition-opacity shadow-lg shadow-accent/20 text-[13px] md:text-[16px]"
+        className="mt-10 inline-flex items-center gap-2 bg-gradient-to-r from-accent to-fuchsia-500 text-white font-medium px-8 py-4 rounded-[12px] hover:opacity-90 transition-opacity shadow-lg shadow-accent/20 text-sm md:text-[16px]"
       >
         Let&apos;s Connect
         <svg

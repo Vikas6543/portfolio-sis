@@ -179,7 +179,7 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              <div className="col-span-12 md:col-span-4 -mt-10 md:mt-0 md:pl-28">
+              <div className="col-span-12 md:col-span-4 md:mt-0 md:pl-28">
                 <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-10">
                   TOOLS
                 </p>
