@@ -14,10 +14,13 @@ export default function AboutPage() {
         <section className="mx-auto max-w-6xl pb-12 pt-1 shadow-[0_0_24px_rgba(14,165,233,0.05)] sm:pb-16">
           <div className="grid min-w-0 grid-cols-12 md:gap-14">
             <div className="order-2 col-span-12 min-w-0 md:order-1 md:col-span-8">
-              <h1 className="max-w-[841px] font-[Playfair-Display] text-3xl leading-[1.08] text-slate-100 sm:text-4xl md:text-5xl">
+              {/* <h1 className="max-w-[841px] font-[Playfair-Display] text-3xl leading-[1.08] text-slate-100 sm:text-4xl md:text-5xl">
+                I design products where complex workflows meet everyday users.
+              </h1> */}
+              <h1 className="font-serif text-[20px] sm:text-[45px] md:text-[60px] font-semibold text-slate-100 md:leading-[74px] text-center md:text-left">
                 I design products where complex workflows meet everyday users.
               </h1>
-              <div className="mt-14 font-inter max-w-2xl space-y-5 text-sm sm:text-[18px] text-[#94A3B8F2] leading-[1.55]">
+              <div className="mt-8 md:mt-14 font-inter max-w-2xl space-y-5 text-sm sm:text-[18px] text-[#94A3B8F2] leading-[1.55]">
                 <p>
                   I&apos;m a UI/UX + Product Designer with 4 years of experience
                   designing digital products and enterprise applications. I
@@ -42,7 +45,7 @@ export default function AboutPage() {
               <img
                 src="/images/Divya-sis-image.jpeg"
                 alt="Divya"
-                className="rounded-[9.5px] w-[220px] h-[220px] md:w-[260px] md:h-[260px] object-cover mt-[140px]"
+                className="rounded-[9.5px] w-[220px] h-[220px] md:w-[260px] md:h-[260px] object-cover mt-[70px] md:mt-0"
               />
             </div>
           </div>

@@ -15,13 +15,13 @@ const testimonials = [
     quote:
       "Working with Divya has always been smooth. She listens carefully, asks the right questions, and collaborates closely with product and development teams to bring ideas to life.",
     name: "Nishmitha Dasaraju",
-    role: "Produt Designer at Torry Harris",
+    role: "Product Designer at Torry Harris",
   },
 ];
 
 function Card({ t }) {
   return (
-    <div className="w-[60vw] sm:w-[360px] shrink-0 bg-slate-900/60 border border-slate-800 rounded-xl p-6 flex flex-col hover:border-accent/40 transition-colors">
+    <div className="w-[100vw] sm:w-[360px] shrink-0 bg-slate-900/60 border border-slate-800 rounded-xl p-6 flex flex-col hover:border-accent/40 transition-colors">
       <p className="text-slate-300 text-base leading-relaxed flex-1">
         &ldquo;{t.quote}&rdquo;
       </p>
@@ -50,7 +50,7 @@ export default function Testimonials() {
 
   return (
     <section className="md:px-0 max-w-full py-[98px]">
-      <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-8 max-w-5xl mx-auto md:px-4">
+      <p className="text-slate-500 text-[12px] md:text-[16px] font-semibold tracking-widest uppercase mb-8 max-w-5xl mx-auto pl-6">
         What People Say
       </p>
 
