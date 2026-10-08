@@ -11,7 +11,7 @@ const links = [
 
 export default function Footer() {
   return (
-    <footer className="md:py-20 px-6 border-t border-[#1d2841] text-center">
+    <footer className="py-[70px] px-6 border-t border-[#1d2841] text-center">
       <p className="font-script text-3xl text-white">divya</p>
 
       <div className="flex items-center justify-center gap-3 mt-6 text-slate-500 text-sm">
