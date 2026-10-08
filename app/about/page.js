@@ -8,7 +8,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="mx-auto mt-16 w-full max-w-full overflow-x-hidden px-6 md:max-w-7xl md:px-16">
+    <div className="mx-auto mt-16 w-full max-w-full overflow-x-hidden px-[9px] md:max-w-7xl md:px-16">
       <Navbar />
       <main className="min-h-screen bg-black px-4 pt-0 md:pt-28 text-slate-400 sm:px-8 md:px-12">
         <section className="mx-auto max-w-6xl pb-12 pt-1 shadow-[0_0_24px_rgba(14,165,233,0.05)] sm:pb-16">
