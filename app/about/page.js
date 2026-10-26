@@ -2,6 +2,14 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import MotionReveal from "@/components/MotionReveal";
 
+const EXPERIENCE_BULLET_POINTS = [
+  "Designed core features of the Torry Harris Digit Marketplace across web and mobile, simplifying B2B/B2C workflows for Vendor, Store Owner, Platform Admin, and Customer roles.",
+  "Revamped the Form Builder, cutting average form creation time by 40%, reaching 100% Preview adoption, and driving a 3× increase in multi-section form usage.",
+  "Owned the design system migration from Ant Design to shadcn/ui, reducing bundle size by 20% and improving load times by 15%, with deeper brand customization.",
+  "Turned client requirements from sales and delivery teams into interactive Figma prototypes for presales demos across e-commerce, hospitality, telecom, and government.",
+  "Partnered with product managers and developers, refining designs through stakeholder feedback and tracking handoffs in Jira with accessibility and usability best practices.",
+];
+
 export const metadata = {
   title: "About | Divya",
   description: "About Divya, a UI/UX and product designer.",
@@ -73,34 +81,11 @@ export default function AboutPage() {
                   </p>
                 </div>
                 <ul className="list-disc space-y-2 pl-4 text-sm marker:text-slate-500 text-[#94A3B8F2] leading-[28px] font-[400] font-inter">
-                  <li className="text-[14px] md:text-[18px]">
-                    Design enterprise and digital product experiences across web
-                    and mobile.
-                  </li>
-                  <li className="text-[14px] md:text-[18px]">
-                    Translate complex business requirements into intuitive user
-                    flows and interfaces.
-                  </li>
-                  <li className="text-[14px] md:text-[18px]">
-                    Conduct user and stakeholder research to understand
-                    workflows and pain points.
-                  </li>
-                  <li className="text-[14px] md:text-[18px]">
-                    Create wireframes, high-fidelity UI, and interactive
-                    prototypes.
-                  </li>
-                  <li className="text-[14px] md:text-[18px]">
-                    Collaborate closely with product managers, developers,
-                    business teams, and presales teams.
-                  </li>
-                  <li className="text-[14px] md:text-[18px]">
-                    Create reusable UI patterns and maintain consistency across
-                    products.
-                  </li>
-                  <li className="text-[14px] md:text-[18px]">
-                    Support developer handoff through detailed design
-                    specifications and walkthroughs.
-                  </li>
+                  {EXPERIENCE_BULLET_POINTS.map((point, index) => (
+                    <li key={index} className="text-[14px] md:text-[18px]">
+                      {point}
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>
