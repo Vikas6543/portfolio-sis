@@ -154,7 +154,7 @@ export default function Navbar() {
                   }
                   setOpen(false);
                 }}
-                className={`text-base font-medium lowercase ${
+                className={`text-base font-medium ${
                   active === link.id ? "text-white" : "text-slate-400"
                 }`}
               >

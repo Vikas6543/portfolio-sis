@@ -13,7 +13,7 @@ export default function Resume() {
       </p>
       <div className="flex flex-col sm:flex-row gap-4">
         <a
-          href="/Divya_Sis_Resume.pdf"
+          href="/Divya-Resume.pdf"
           download
           className="border border-accent text-accent px-8 py-3 rounded-[16px] font-medium hover:bg-accent/10 transition-colors"
         >
